@@ -1,6 +1,7 @@
 package com.github.giovaneneves7.travellingsalesmanproblem.chromosomes;
 
 import com.github.giovaneneves7.travellingsalesmanproblem.genes.TSPGene;
+import com.github.giovaneneves7.travellingsalesmanproblem.utils.TSPUtils;
 import java.util.ArrayList;
 
 import java.util.Arrays;
@@ -117,10 +118,26 @@ public class TSPChromosome {
         
     }
     
+    /**
+     * The mutation function
+     * 
+     * @return A mutate TSPChromosome 
+     */
     public TSPChromosome mutate(){
         
+        final List<TSPGene> copy = new ArrayList<>(this.chromosome);
+        int indexA = TSPUtils.randomIndex(copy.size());
+        int indexB = TSPUtils.randomIndex(copy.size());
         
-        return null;
+        while(indexA == indexB){
+            
+            indexA = TSPUtils.randomIndex(copy.size());
+            indexB = TSPUtils.randomIndex(copy.size());
+            
+        }
+        Collections.swap(copy, indexB, indexB);
+        
+        return new TSPChromosome(copy);
     }
     
     // Boilerplate code
