@@ -14,9 +14,9 @@ import java.util.stream.IntStream;
  */
 public class TSPUtils {
  
+    private static final Random R = new Random(10000);
     public final static TSPGene[] CITIES = generateData(100); 
     
-    private static final Random R = new Random(10000);
     
     private TSPUtils(){
         throw new RuntimeException("Error!");
@@ -33,8 +33,8 @@ public class TSPUtils {
         final TSPGene[] data = new TSPGene[numDataPoints];
         for(int i = 0; i < numDataPoints; i++){
             data[i] = new TSPGene(
-                    TSPUtils.randomIndex(ScreenBackground.WIDTH), 
-                    TSPUtils.randomIndex(ScreenBackground.HEIGHT)
+                    TSPUtils.randomIndex(400), 
+                    TSPUtils.randomIndex(300)
             );
         }
         

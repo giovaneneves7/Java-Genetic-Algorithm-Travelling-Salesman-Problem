@@ -1,4 +1,8 @@
+com/github/giovaneneves7/travellingsalesmanproblem/populations/TSPPopulation.class
+com/github/giovaneneves7/travellingsalesmanproblem/chromosomes/TSPChromosome.class
+com/github/giovaneneves7/travellingsalesmanproblem/genes/TSPGene.class
 com/github/giovaneneves7/travellingsalesmanproblem/screens/WorldScreen$1.class
-com/github/giovaneneves7/travellingsalesmanproblem/screens/WorldScreen.class
 com/github/giovaneneves7/travellingsalesmanproblem/TravellingSalesmanProblem.class
 com/github/giovaneneves7/travellingsalesmanproblem/widgets/ScreenBackground.class
+com/github/giovaneneves7/travellingsalesmanproblem/utils/TSPUtils.class
+com/github/giovaneneves7/travellingsalesmanproblem/screens/WorldScreen.class
